@@ -19,6 +19,9 @@ func main() {
     guard CommandLine.arguments.count == 3 else {
         exitWithUsage()
     }
+    guard #available(iOS 16.0, *) else {
+        return
+    }
     let outputPath = CommandLine.arguments[1]
     let sourcePackagesPath = CommandLine.arguments[2]
     do {

@@ -1,5 +1,6 @@
 import Foundation
 
+@available(iOS 16.0, *)
 final class SourcePackagesParser {
     let outputURL: URL
     let sourcePackagesURL: URL
